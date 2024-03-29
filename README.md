@@ -2,10 +2,10 @@ blackthorne
 ===
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.io7m.blackthorne/com.io7m.blackthorne.svg?style=flat-square)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.io7m.blackthorne%22)
-[![Maven Central (snapshot)](https://img.shields.io/nexus/s/https/s01.oss.sonatype.org/com.io7m.blackthorne/com.io7m.blackthorne.svg?style=flat-square)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/io7m/blackthorne/)
+[![Maven Central (snapshot)](https://img.shields.io/nexus/s/com.io7m.blackthorne/com.io7m.blackthorne?server=https%3A%2F%2Fs01.oss.sonatype.org&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/io7m/blackthorne/)
 [![Codecov](https://img.shields.io/codecov/c/github/io7m/blackthorne.svg?style=flat-square)](https://codecov.io/gh/io7m/blackthorne)
 
-![blackthorne](./src/site/resources/blackthorne.jpg?raw=true)
+![com.io7m.blackthorne](./src/site/resources/blackthorne.jpg?raw=true)
 
 | JVM | Platform | Status |
 |-----|----------|--------|
@@ -297,7 +297,7 @@ documents that can be sensibly typed. A given element handler
 If the child elements of the handler can be of a set of different types, then
 it would be desirable (for the sake of type-safety and readability) for those
 child elements to have a common supertype that is not `Object`. The best way to
-do this, schema allowing, is to use a sealedinterface:
+do this, schema allowing, is to use a sealed interface:
 
 ```
 sealed interface T { }
