@@ -30,9 +30,15 @@
   </modules>
 
   <properties>
-    <com.io7m.junit.version>5.10.1</com.io7m.junit.version>
-    <com.io7m.jxe.version>1.0.2</com.io7m.jxe.version>
+    <!-- Configuration. -->
     <io7m.api.previousVersion>2.0.0</io7m.api.previousVersion>
+    <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
+
+    <!-- io7m dependencies. -->
+    <com.io7m.jxe.version>1.0.2</com.io7m.jxe.version>
+
+    <!-- Third-party dependencies. -->
+    <com.io7m.junit.version>5.10.1</com.io7m.junit.version>
     <jqwik.version>1.8.2</jqwik.version>
   </properties>
 

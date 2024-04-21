@@ -87,6 +87,7 @@
       <Bug pattern="IMC_IMMATURE_CLASS_NO_TOSTRING"/>
       <Bug pattern="WEM_WEAK_EXCEPTION_MESSAGING"/>
       <Bug pattern="CRLF_INJECTION_LOGS"/>
+      <Bug pattern="AI_ANNOTATION_ISSUES_NEEDS_NULLABLE"/>
     </Or>
   </Match>
 
