@@ -3,16 +3,16 @@ blackthorne
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.io7m.blackthorne/com.io7m.blackthorne.svg?style=flat-square)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.io7m.blackthorne%22)
 [![Maven Central (snapshot)](https://img.shields.io/nexus/s/com.io7m.blackthorne/com.io7m.blackthorne?server=https%3A%2F%2Fs01.oss.sonatype.org&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/io7m/blackthorne/)
-[![Codecov](https://img.shields.io/codecov/c/github/io7m/blackthorne.svg?style=flat-square)](https://codecov.io/gh/io7m/blackthorne)
+[![Codecov](https://img.shields.io/codecov/c/github/io7m-com/blackthorne.svg?style=flat-square)](https://codecov.io/gh/io7m-com/blackthorne)
 
 ![com.io7m.blackthorne](./src/site/resources/blackthorne.jpg?raw=true)
 
 | JVM | Platform | Status |
 |-----|----------|--------|
-| OpenJDK (Temurin) Current | Linux | [![Build (OpenJDK (Temurin) Current, Linux)](https://img.shields.io/github/actions/workflow/status/io7m/blackthorne/main.linux.temurin.current.yml)](https://github.com/io7m/blackthorne/actions?query=workflow%3Amain.linux.temurin.current)|
-| OpenJDK (Temurin) LTS | Linux | [![Build (OpenJDK (Temurin) LTS, Linux)](https://img.shields.io/github/actions/workflow/status/io7m/blackthorne/main.linux.temurin.lts.yml)](https://github.com/io7m/blackthorne/actions?query=workflow%3Amain.linux.temurin.lts)|
-| OpenJDK (Temurin) Current | Windows | [![Build (OpenJDK (Temurin) Current, Windows)](https://img.shields.io/github/actions/workflow/status/io7m/blackthorne/main.windows.temurin.current.yml)](https://github.com/io7m/blackthorne/actions?query=workflow%3Amain.windows.temurin.current)|
-| OpenJDK (Temurin) LTS | Windows | [![Build (OpenJDK (Temurin) LTS, Windows)](https://img.shields.io/github/actions/workflow/status/io7m/blackthorne/main.windows.temurin.lts.yml)](https://github.com/io7m/blackthorne/actions?query=workflow%3Amain.windows.temurin.lts)|
+| OpenJDK (Temurin) Current | Linux | [![Build (OpenJDK (Temurin) Current, Linux)](https://img.shields.io/github/actions/workflow/status/io7m-com/blackthorne/main.linux.temurin.current.yml)](https://www.github.com/io7m-com/blackthorne/actions?query=workflow%3Amain.linux.temurin.current)|
+| OpenJDK (Temurin) LTS | Linux | [![Build (OpenJDK (Temurin) LTS, Linux)](https://img.shields.io/github/actions/workflow/status/io7m-com/blackthorne/main.linux.temurin.lts.yml)](https://www.github.com/io7m-com/blackthorne/actions?query=workflow%3Amain.linux.temurin.lts)|
+| OpenJDK (Temurin) Current | Windows | [![Build (OpenJDK (Temurin) Current, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/blackthorne/main.windows.temurin.current.yml)](https://www.github.com/io7m-com/blackthorne/actions?query=workflow%3Amain.windows.temurin.current)|
+| OpenJDK (Temurin) LTS | Windows | [![Build (OpenJDK (Temurin) LTS, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/blackthorne/main.windows.temurin.lts.yml)](https://www.github.com/io7m-com/blackthorne/actions?query=workflow%3Amain.windows.temurin.lts)|
 
 ## blackthorne
 
@@ -26,7 +26,7 @@ require holding the entire parsed AST in memory.
   * Stream-based: Documents do not require an expensive intermediate AST in memory.
   * Type-safe: Build data structures during parsing without losing type-safety.
   * No reflection: No need to worry about reflective serialization-based security issues.
-  * Integrated with [jxe](https://github.com/io7m/jxe) for transparent, hardened, validation-enforcing SAX parsers.
+  * Integrated with [jxe](https://www.github.com/io7m-com/jxe) for transparent, hardened, validation-enforcing SAX parsers.
   * Written in pure Java 17.
   * [OSGi](https://www.osgi.org/) ready.
   * [JPMS](https://en.wikipedia.org/wiki/Java_Platform_Module_System) ready.
@@ -379,7 +379,7 @@ The `PRESERVE_LEXICAL_INFORMATION` enumeration value instructs the `Blackthorne`
 API to leave the lexical information delivered by the stream parser untouched.
 The `handlers` parameter is the map of handlers, and the lambda expression
 is a function that returns a value of type `XMLReader` on demand. It is
-recommended that [jxe](https://github.com/io7m/jxe) be used as the factory
+recommended that [jxe](https://www.github.com/io7m-com/jxe) be used as the factory
 of XML readers as it configures the readers using secure defaults
 (preventing entity expansion attacks and other problems), and enforces that
 all incoming documents _must_ validate according to one or more given schemas.

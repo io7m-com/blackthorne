@@ -11,7 +11,7 @@ require holding the entire parsed AST in memory.
   * Stream-based: Documents do not require an expensive intermediate AST in memory.
   * Type-safe: Build data structures during parsing without losing type-safety.
   * No reflection: No need to worry about reflective serialization-based security issues.
-  * Integrated with [jxe](https://github.com/io7m/jxe) for transparent, hardened, validation-enforcing SAX parsers.
+  * Integrated with [jxe](https://www.github.com/io7m-com/jxe) for transparent, hardened, validation-enforcing SAX parsers.
   * Written in pure Java 17.
   * [OSGi](https://www.osgi.org/) ready.
   * [JPMS](https://en.wikipedia.org/wiki/Java_Platform_Module_System) ready.
@@ -364,7 +364,7 @@ The `PRESERVE_LEXICAL_INFORMATION` enumeration value instructs the `Blackthorne`
 API to leave the lexical information delivered by the stream parser untouched.
 The `handlers` parameter is the map of handlers, and the lambda expression
 is a function that returns a value of type `XMLReader` on demand. It is
-recommended that [jxe](https://github.com/io7m/jxe) be used as the factory
+recommended that [jxe](https://www.github.com/io7m-com/jxe) be used as the factory
 of XML readers as it configures the readers using secure defaults
 (preventing entity expansion attacks and other problems), and enforces that
 all incoming documents _must_ validate according to one or more given schemas.
