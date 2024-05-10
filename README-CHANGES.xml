@@ -48,7 +48,7 @@
         <c:change date="2022-04-09T00:00:00+00:00" summary="Update jlexing"/>
       </c:changes>
     </c:release>
-    <c:release date="2023-08-10T15:54:41+00:00" is-open="false" ticket-system="com.github.io7m.blackthorne" version="2.0.0">
+    <c:release date="2023-08-10T00:00:00+00:00" is-open="false" ticket-system="com.github.io7m.blackthorne" version="2.0.0">
       <c:changes>
         <c:change compatible="false" date="2023-08-08T00:00:00+00:00" summary="Make parse errors into Seltzer errors."/>
         <c:change compatible="false" date="2023-08-08T00:00:00+00:00" summary="Remove immutables.org types in favour of plain records."/>
@@ -58,8 +58,29 @@
         <c:change compatible="false" date="2023-08-08T00:00:00+00:00" summary="Upgrade BTException to be a structured (Seltzer) exception."/>
       </c:changes>
     </c:release>
+    <c:release date="2024-05-10T13:42:18+00:00" is-open="false" ticket-system="com.github.io7m.blackthorne" version="2.0.1">
+      <c:changes>
+        <c:change date="2024-04-21T00:00:00+00:00" summary="Update jqwik.version:1.8.2 → 1.8.4."/>
+        <c:change date="2024-04-21T00:00:00+00:00" summary="Update ch.qos.logback:logback-classic:1.4.14 → 1.5.6."/>
+        <c:change date="2024-04-21T00:00:00+00:00" summary="Update nl.jqno.equalsverifier:equalsverifier:3.15.5 → 3.16.1."/>
+        <c:change date="2024-04-21T00:00:00+00:00" summary="Update net.bytebuddy:byte-buddy-agent:1.14.11 → 1.14.13."/>
+        <c:change date="2024-04-21T00:00:00+00:00" summary="Update org.slf4j:slf4j-api:2.0.10 → 2.0.13."/>
+        <c:change date="2024-04-22T00:00:00+00:00" summary="Update com.io7m.junit.version:5.10.1 → 5.10.2."/>
+        <c:change date="2024-04-22T00:00:00+00:00" summary="Update net.bytebuddy:byte-buddy:1.14.11 → 1.14.13."/>
+        <c:change date="2024-04-22T00:00:00+00:00" summary="Update org.mockito:mockito-core:5.8.0 → 5.11.0."/>
+        <c:change date="2024-04-28T00:00:00+00:00" summary="Update net.bytebuddy:byte-buddy:1.14.13 → 1.14.14."/>
+        <c:change date="2024-04-28T00:00:00+00:00" summary="Update net.bytebuddy:byte-buddy-agent:1.14.13 → 1.14.14."/>
+        <c:change date="2024-05-05T00:00:00+00:00" summary="Update com.io7m.jaffirm:com.io7m.jaffirm.core:4.0.0 → 4.0.1."/>
+        <c:change date="2024-05-08T00:00:00+00:00" summary="Update com.io7m.jxe:com.io7m.jxe.core:1.0.2 → 1.0.3."/>
+        <c:change date="2024-05-08T00:00:00+00:00" summary="Update com.io7m.jlexing:com.io7m.jlexing.core:3.1.0 → 3.2.0."/>
+        <c:change date="2024-05-09T00:00:00+00:00" summary="Update com.io7m.seltzer:com.io7m.seltzer.api:1.0.0 → 1.0.1."/>
+        <c:change date="2024-05-09T00:00:00+00:00" summary="Update net.bytebuddy:byte-buddy-agent:1.14.14 → 1.14.15."/>
+        <c:change date="2024-05-09T00:00:00+00:00" summary="Update net.bytebuddy:byte-buddy:1.14.14 → 1.14.15."/>
+        <c:change date="2024-05-10T00:00:00+00:00" summary="Move to new organization."/>
+      </c:changes>
+    </c:release>
   </c:releases>
   <c:ticket-systems>
-    <c:ticket-system default="true" id="com.github.io7m.blackthorne" url="https://www.github.com/io7m/blackthorne/issues/"/>
+    <c:ticket-system default="true" id="com.github.io7m.blackthorne" url="https://www.github.com/io7m-com/blackthorne/issues/"/>
   </c:ticket-systems>
 </c:changelog>
