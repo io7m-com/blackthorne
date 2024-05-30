@@ -40,6 +40,7 @@
     <!-- Third-party dependencies. -->
     <com.io7m.junit.version>5.10.2</com.io7m.junit.version>
     <jqwik.version>1.8.5</jqwik.version>
+    <net.byte-buddy.version>1.14.16</net.byte-buddy.version>
   </properties>
 
   <licenses>
@@ -148,19 +149,16 @@
 
       <!-- Test suite -->
       <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${com.io7m.junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
         <groupId>nl.jqno.equalsverifier</groupId>
         <artifactId>equalsverifier</artifactId>
         <version>3.16.1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${com.io7m.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>${com.io7m.junit.version}</version>
       </dependency>
       <dependency>
         <groupId>net.jqwik</groupId>
@@ -187,12 +185,12 @@
       <dependency>
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy-agent</artifactId>
-        <version>1.14.16</version>
+        <version>${net.byte-buddy.version}</version>
       </dependency>
       <dependency>
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy</artifactId>
-        <version>1.14.16</version>
+        <version>${net.byte-buddy.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
