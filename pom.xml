@@ -40,7 +40,7 @@
     <!-- Third-party dependencies. -->
     <com.io7m.junit.version>5.10.2</com.io7m.junit.version>
     <jqwik.version>1.8.5</jqwik.version>
-    <net.byte-buddy.version>1.14.16</net.byte-buddy.version>
+    <net.byte-buddy.version>1.14.17</net.byte-buddy.version>
   </properties>
 
   <licenses>
