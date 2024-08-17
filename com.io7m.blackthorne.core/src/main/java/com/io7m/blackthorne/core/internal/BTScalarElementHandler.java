@@ -21,6 +21,7 @@ import com.io7m.blackthorne.core.BTCharacterHandlerType;
 import com.io7m.blackthorne.core.BTElementHandlerType;
 import com.io7m.blackthorne.core.BTElementParsingContextType;
 import com.io7m.blackthorne.core.BTQualifiedName;
+import org.xml.sax.Attributes;
 
 import java.util.Objects;
 
@@ -32,10 +33,9 @@ import java.util.Objects;
 
 public final class BTScalarElementHandler<S> implements BTElementHandlerType<Object, S>
 {
-  private static final char[] CHARACTERS = new char[0];
   private final BTCharacterHandlerType<S> handler;
   private final BTQualifiedName name;
-  private S result;
+  private final StringBuilder textBuffer;
 
   /**
    * Construct a handler.
@@ -52,6 +52,8 @@ public final class BTScalarElementHandler<S> implements BTElementHandlerType<Obj
       Objects.requireNonNull(inName, "name");
     this.handler =
       Objects.requireNonNull(inHandler, "handler");
+    this.textBuffer =
+      new StringBuilder();
   }
 
   @Override
@@ -66,12 +68,16 @@ public final class BTScalarElementHandler<S> implements BTElementHandlerType<Obj
     final char[] data,
     final int offset,
     final int length)
-    throws Exception
   {
-    final var parsed =
-      this.handler.parse(context, data, offset, length);
-    this.result =
-      Objects.requireNonNull(parsed, "parsed");
+    this.textBuffer.append(data, offset, length);
+  }
+
+  @Override
+  public void onElementStart(
+    final BTElementParsingContextType context,
+    final Attributes attributes)
+  {
+    this.textBuffer.setLength(0);
   }
 
   @Override
@@ -79,12 +85,13 @@ public final class BTScalarElementHandler<S> implements BTElementHandlerType<Obj
     final BTElementParsingContextType context)
     throws Exception
   {
-    if (this.result == null) {
-      final var parsed =
-        this.handler.parse(context, CHARACTERS, 0, 0);
-      this.result =
-        Objects.requireNonNull(parsed, "parsed");
-    }
-    return this.result;
+    final var textAll =
+      this.textBuffer.toString();
+    final var textCharacters =
+      textAll.toCharArray();
+    final var parsed =
+      this.handler.parse(context, textCharacters, 0, textCharacters.length);
+
+    return Objects.requireNonNull(parsed, "parsed");
   }
 }
