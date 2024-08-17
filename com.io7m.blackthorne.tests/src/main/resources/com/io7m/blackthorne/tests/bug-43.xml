@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AuthorizationQueryParametersError</Code><Message>Error parsing the X-Amz-Credential parameter; incorrect date format. This date in the credential must be in the format &#34;yyyyMMdd&#34;.</Message><Resource>/</Resource><RequestId>17EC79A1EFDF31E7</RequestId><HostId>dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8</HostId></Error>
