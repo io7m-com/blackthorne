@@ -35,7 +35,7 @@
     <io7m.java.targetJavaVersion>17</io7m.java.targetJavaVersion>
 
     <!-- io7m dependencies. -->
-    <com.io7m.jxe.version>1.1.0</com.io7m.jxe.version>
+    <com.io7m.jxe.version>2.0.0</com.io7m.jxe.version>
 
     <!-- Third-party dependencies. -->
     <com.io7m.junit.version>5.11.0</com.io7m.junit.version>
